@@ -1,12 +1,5 @@
 #!/usr/bin/env bash
-
-# script_on_droid=/sdcard/sl4a/scripts/contacts.py
-# adb push contacts.py $script_on_droid
-# adb shell am start -a com.googlecode.android_scripting.action.LAUNCH_FOREGROUND_SCRIPT -n com.googlecode.android_scripting/.activity.ScriptingLayerServiceLauncher -e com.googlecode.android_scripting.extra.SCRIPT_PATH $script_on_droid
-
-# built from 
-# adb shell content query --uri content://contacts/people/ --projection display_name:number| egrep -i "(=(Kat.*|Rose.*|Sarah|Pat) Foran)|(Rachel Elder)|(Emily Mente)|(Cyn.* Majistro)"
-
+#
 # cannot get by number
 getcid(){
   number=$1
