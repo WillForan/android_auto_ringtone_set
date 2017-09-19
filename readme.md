@@ -3,9 +3,9 @@ Assign ringtones to starred contacts using `adb shell content`
 
   1. `install.bash` puts files on the phone (Ringtones on emulated sd storage) and runs
   2. `adbContactRingtones.bash` 
-    1. merges star contacts with their desired ringtone (get contact id)
-    2. creates media db entry for ringtone if it doesn't exit (get ringtone media id)
-    3. sets `custom_ringtone` for contact
+     1. merges star contacts with their desired ringtone (get contact id)
+     2. creates media db entry for ringtone if it doesn't exit (get ringtone media id)
+     3. sets `custom_ringtone` for contact
 
 ## Why
 I assigned bird sounds to the people who call me often (from [the Cornell lab of ornithology](https://www.allaboutbirds.org/guide/search/)). I will probably decide this is a bad idea and want to quickly change the sounds. It's laborious to do by hand. Also it's nice to be sure what sound is associated with what person.
