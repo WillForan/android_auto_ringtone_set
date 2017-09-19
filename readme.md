@@ -8,7 +8,7 @@ Assign ringtones to starred contacts using `adb shell content`
     3. sets `custom_ringtone` for contact
 
 ## Why
-I assigned bird sounds to the people who call me often (from [the Cornell lab of ornithology](https://www.allaboutbirds.org/guide/search/). I will probably decide this is a bad idea and want to quickly change the sounds. It's laborious to do by hand. Also it's nice to be sure what sound is assocated with what person.
+I assigned bird sounds to the people who call me often (from [the Cornell lab of ornithology](https://www.allaboutbirds.org/guide/search/). I will probably decide this is a bad idea and want to quickly change the sounds. It's laborious to do by hand. Also it's nice to be sure what sound is associated with what person.
 
 # Notes
 ## personal android automation
@@ -27,4 +27,12 @@ Other attempts include.
   * `query --uri  content://contacts/people/ --where 'number="..."'` will not return matches.
   * how to or if it is at all possible to use wildcard (`%partial%`) in `--where` "SQL like" query is an open question for me
 
+## ringtone "creation"
+`normalize *mp3` should have equalized the volume. I do not have confidence that my invocation was sufficient. 
 
+Bird noises are easy to lift from the very straight forward html of allaboutbirds.org
+
+For non-bird/music clips, I 
+  - used audacity to clip the audio to just an instrumental segment
+  - cut the start of the clip and placed it at the end in a new layer
+  - chopped and moved until the ends such that the repeat transition was as seamless as I cared to fuss with. Highlighting the end region and using shift+click for looped play was extremely useful.
